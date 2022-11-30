@@ -61,7 +61,7 @@
                 </form>
                 <div class="flex gap-7 text-4xl">
                     <h1>{vrijeme.name}</h1>
-                    <h1 class="text-yellow-400">{Math.round(vrijeme.main.temp) /10}C</h1>
+                    <h1 class="text-yellow-400">{Math.round(vrijeme.main.temp) -273.15}C</h1>
                 </div>
                 <h1 class="">{timestamp}</h1>
                 <h1>Oblaci: {vrijeme.weather[0].description}</h1>
