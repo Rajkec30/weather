@@ -49,7 +49,7 @@
     <div class="font-['poppins text-[#0070ef] h-screen flex flex-col justify-center items-center">
         {#if !loaded}
             <div class="fixed top-0 left-0 right-0 bottom-0 grid place-items-center z-50">
-                <div class="bg-[url('./assets/Rolling-1s-200px.svg')] w-40 h-40 img bg-no-repeat"></div>
+                <div class="bg-[url('./assets/Rolling-1s-200px.svg')] w-[200px] h-[200px] img bg-no-repeat"></div>
             </div>
         {/if}
         <slot />
