@@ -45,7 +45,7 @@
     $: timestamp = now.getDate() + '.' + (now.getMonth()+1) + '.' +now.getFullYear() + '.'
 </script>
 
-<main class="bg-[url('./assets/104824.webp')]">
+<main class="bg-[url('./assets/104824.webp')]" style="background-size: cover;background-repeat: no-repeat;">
     <div class="font-['poppins text-[#0070ef] h-screen flex flex-col justify-center items-center">
         {#if !loaded}
             <div class="fixed top-0 left-0 right-0 bottom-0 grid place-items-center z-50">
@@ -54,7 +54,7 @@
         {/if}
         <slot />
         {#if vrijeme}
-            <div class="flex flex-col justify-center items-start drop-shadow-2xl rounded-3xl bg-white p-14 w-6/12 text-3xl gap-8">
+            <div class="flex flex-col justify-center items-start drop-shadow-2xl rounded-3xl bg-white p-14 w-4/5 md:w-3/5 lg:w-1/2 text-3xl gap-8">
                 <form class="text-gray-800 " on:submit|preventDefault={handleSubmit}>
                     <input class="outline-0 focus:ring-2 focus:rounded p-1 border-b-2 focus:border-0" type="text" bind:value={place} placeholder="Grad">
                     <button class="bg-[#0070ef] text-white px-2 py-1 rounded">Pretrazi</button>
