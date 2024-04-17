@@ -54,7 +54,7 @@
         {/if}
         <slot />
         {#if vrijeme}
-            <div class="flex flex-col justify-center items-start drop-shadow-2xl rodunded-lg md:rounded-3xl bg-white px-5 py-5 md:p-14 w-[90%] md:w-fit md:text-xl gap-8">
+            <div class="flex flex-col justify-center items-start drop-shadow-2xl rounded-lg md:rounded-3xl bg-white px-5 py-5 md:p-14 w-[90%] md:w-fit md:text-xl gap-8">
                 <form class="text-gray-800 " on:submit|preventDefault={handleSubmit}>
                     <input class="outline-0 focus:ring-2 focus:rounded p-1 border-b-2 focus:border-0" type="text" bind:value={place} placeholder="Grad">
                     <button class="md:ml-5 bg-[#0070ef] text-white px-2 py-1 rounded">Pretrazi</button>
