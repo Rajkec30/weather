@@ -59,7 +59,7 @@
                     <input class="outline-0 focus:ring-2 focus:rounded p-1 border-b-2 focus:border-0" type="text" bind:value={place} placeholder="Grad">
                     <button class="md:ml-5 bg-[#0070ef] text-white px-2 py-1 rounded">Pretrazi</button>
                 </form>
-                <div class="flex gap-7 texxt-lg md:text-2xl lg:text-4xl">
+                <div class="flex gap-7 text-lg md:text-2xl lg:text-4xl">
                     <h1>{vrijeme.name}</h1>
                     <h1 class="text-yellow-400">{(vrijeme.main.temp -273.15).toFixed(1)}C</h1>
                 </div>
