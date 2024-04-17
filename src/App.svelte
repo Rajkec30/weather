@@ -54,12 +54,12 @@
         {/if}
         <slot />
         {#if vrijeme}
-            <div class="flex flex-col justify-center items-start drop-shadow-2xl rounded-3xl bg-white p-14 w-4/5 md:w-3/5 lg:w-1/2 text-3xl gap-8">
+            <div class="flex flex-col justify-center items-start drop-shadow-2xl rounded-3xl bg-white p-14 w-4/5 md:w-3/5 lg:w-1/2 md:text-xl lg:text-3xl gap-8">
                 <form class="text-gray-800 " on:submit|preventDefault={handleSubmit}>
                     <input class="outline-0 focus:ring-2 focus:rounded p-1 border-b-2 focus:border-0" type="text" bind:value={place} placeholder="Grad">
                     <button class="bg-[#0070ef] text-white px-2 py-1 rounded">Pretrazi</button>
                 </form>
-                <div class="flex gap-7 text-4xl">
+                <div class="flex gap-7 texxt-lg md:text-2xl lg:text-4xl">
                     <h1>{vrijeme.name}</h1>
                     <h1 class="text-yellow-400">{(vrijeme.main.temp -273.15).toFixed(1)}C</h1>
                 </div>
